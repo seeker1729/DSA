@@ -15,7 +15,7 @@ TC -> O(m * n)  SC -> O(m + n)
 (BEST) Approach 3 ->
 --> store the info about which row and column need to be made zero in the matrix itself
 --> Use col 0 for storing info about rows and row 0 for storing info about columns 
---> Go through the matrix if matrix[r][c] == 0 then make matrix[0][c] = 0 (marked the column) and matrix[r][0] = 0 (marked the column)
+--> Go through the matrix if matrix[r][c] == 0 then make matrix[0][c] = 0 (marked the column) and matrix[r][0] = 0 (marked the row)
 --> ** matrix[0][0] is being used for two info row 0 as well as col0 so we will use a variable row0 for storing info about row 0
 
 TC -> O(m * n)  SC -> O(1)
